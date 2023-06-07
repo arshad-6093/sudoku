@@ -3,12 +3,9 @@ module Lib where
 import Data.List (sort)
 
 -- Considering sudokuTable as a tuple of 3 Int. First int denotes the value, and next two tuples as rows and columns.
--- Initialising the sudokuTable with 0 in all rows and columns.
+-- Initialising the sudokuTable with 0 in all non-filled  rows and columns.
 
 type SudokuTable = [(Int, Int, Int)]
-
-sudokuTable :: SudokuTable
-sudokuTable = [(0,x,y) | x <- [1..9], y <- [1..9]]
 
 -- A function index such that index s i j evaluates to the number in the table s : SudokuTable at position (i, j)
 
