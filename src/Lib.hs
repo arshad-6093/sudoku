@@ -17,7 +17,7 @@ index ((a,b,c):xs) (i,j)
 
 -- A function update such that, given an input table s : SudokuTable, the expression update s i j n evaluates to a
 -- table s’ : SudokuTable such that index s’ i j == n, and the rest of s’ is the the same as s. In other words,
---the function updates the cell at position pi, jq with the given value
+--the function updates the cell at position i, j with the given value
 
 update :: SudokuTable -> (Int,Int) -> Int -> SudokuTable
 update [] _ _ = []
